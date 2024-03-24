@@ -46,7 +46,7 @@ class Versus(commands.Cog):
             await inter.response.send_message("같은 사람을 선택할 수 없습니다.", ephemeral=True)
             return
         if minimum_wining_score < 1:
-            await inter.response.send_message("승리하기 위한 최소 승점은 1보다 작을 수 없습니다.", ephemeral=True)
+            await inter.response.send_message("승리 점수는 1 이상이어야 합니다.", ephemeral=True)
             return
 
         # 데이터 등록
